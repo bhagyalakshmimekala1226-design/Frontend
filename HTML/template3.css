@@ -1,0 +1,309 @@
+/* class selector */
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    gap:35%;
+}
+
+.logo-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-links{
+    /* margin-left: 30%; */
+    display: flex;
+    gap: 40px;
+}
+
+/*descendent selector*/
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    /* margin:20px; */
+
+}
+
+/* Pseudo class selector */
+.nav-links a:hover{
+   color: green;
+}
+
+/* about section */
+
+.about{
+    display: flex;
+    background-color: lightgray;
+}
+.about-text{
+    width: 50%;
+    padding: 4% 3%;
+    color: white;
+    
+}
+
+.about-text p{
+    font-size:15px ;
+    margin-bottom: 30px;
+}
+
+.about-text a{
+    color: white;
+    border: 1px solid limegreen;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.about-text a:hover{
+    background-color: green;
+}
+.about-image{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.about-text h2{
+    font-size: 40px;
+}
+
+.about-text h3{
+    font-size: 30px;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ---------------------what i do section----------------------- */
+.what-i-do{
+    background-color: black;
+    padding: 3%;
+}           
+.heading3{
+   text-align: center;
+   font-size: 30px;
+   margin-bottom: 30px;
+   color: white;
+}
+.what-i-do-info{
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+}
+ 
+.what-i-do-info-card{
+    border: 2px solid black;
+    padding: 2%;
+    text-align: center;
+    border-radius: 10px;
+    background-color:gray ;
+    color: white;
+}
+
+.what-i-do-info-card:hover{
+    transform: translateY(-30px);
+    transition: 1s;
+}
+
+/* ------------------Table---------------- */
+.tablesection{
+    background-color: black;
+    color: white;
+    padding: 4%;
+}
+
+table{
+    margin: auto;
+    width: 90%;
+}
+th{
+    background-color: limegreen;
+}
+
+
+ /* .what-i-do{
+    background-color: rgba(211, 211, 211, 0.481);
+    padding: 10px;
+}
+.what-i-do h3{
+   text-align: center;
+}
+
+.what-i-do-info{
+    display: flex;
+}
+
+.what-i-do-info div{
+    text-align: center;
+    border: 2px solid rgba(211, 211, 211, 0.499);
+    margin:10px;
+    padding: 5px;
+}
+
+.what-i-do-info h4{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.what-i-do-info i{
+    color: palevioletred;
+    font-size: 30px;
+} */
+
+.myprojects h3{
+    text-align: center;
+}
+
+.myprojects-info {
+    display: flex;
+}
+
+.myprojects-info div{
+    border: 2px solid black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.myprojects-info img{
+    width: 100%;
+}
+
+.myprojects-info a{
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: lightgray;
+}
+
+.myprojects{
+    background-color: lightgray;
+    
+}
+
+.education h4{
+    text-align: center;
+
+}
+
+.education table{
+    margin: auto;
+    width: 90%;
+}
+
+.education tr{
+    text-align: center;
+}
+
+.education th{
+    background-color: green;
+} 
+
+/* ---------------------------------Bottom Section------------------------------------------ */
+.bottom{
+background-color: rgba(0, 0, 0, 0.63);
+}
+
+@media(max-width:576px){
+    .bottom{
+        background-color:green;
+    }
+    .bottom-section{
+        flex-direction: column;
+        padding: 20px;
+
+
+    }
+
+    .achievements, .contact{
+        width: 100%;
+    }
+    .bashi{
+        border: none;
+    }
+}
+
+.bottom-section{
+    display:  flex;
+    /* border:  2px solid black; */
+    color: white;
+    padding: 30px;
+   
+}
+
+/* .bottom-section ul{
+    margin-right: 20px;
+} */
+.achievements, .contact{
+    /* border: 2px solid rgb(0, 0, 0); */
+    width: 50%;
+    font-size: 20px;
+    line-height: 2;
+    
+    
+}
+.bashi{
+    border-left: 2px solid rgba(0, 0, 0, 0.425);
+}
+.achievements .fa-circle-check{
+    margin-right: 20px;
+    color: limegreen;
+    
+}
+
+.contact i{
+    margin-right: 20px;
+    color: limegreen;
+}
+
+.declaration{
+    color:  white;
+    /* border: 2px solid black; */
+    padding:  5% 3% 3% 6%;
+}
+
+.declaration h3{
+    font-size: 30px;
+}
+
+.declaration-box{
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+@media(min-width:769px) and (max-width:992px){
+    .bottom{
+        background-color: pink;
+
+    }
+}
